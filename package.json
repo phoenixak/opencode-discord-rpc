@@ -1,0 +1,63 @@
+{
+  "name": "opencode-discord-rpc",
+  "version": "1.0.0",
+  "description": "Discord Rich Presence plugin for OpenCode - Show your coding activity in Discord",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "opencode",
+    "discord",
+    "rich-presence",
+    "rpc",
+    "discord-rpc",
+    "plugin",
+    "ai",
+    "coding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/opencode-discord-rpc"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/opencode-discord-rpc/issues"
+  },
+  "homepage": "https://github.com/yourusername/opencode-discord-rpc#readme",
+  "dependencies": {
+    "@xhayper/discord-rpc": "^1.3.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.1.25",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@opencode-ai/plugin": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

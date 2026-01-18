@@ -139,7 +139,7 @@ It only shows:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/opencode-discord-rpc.git
+git clone https://github.com/phoenixak/opencode-discord-rpc.git
 cd opencode-discord-rpc
 
 # Install dependencies
